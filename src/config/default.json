@@ -1,0 +1,26 @@
+{
+    "app": {
+        "baseUri": "https://localbottestapp.azurewebsites.net",
+        "appId": "349f9ea5-a6ee-4993-b256-8bbc38d3c68c",
+        "appPassword": "lffzo3C1{9ayGiAMJzQH.[o4zndcnJX}"
+    },
+    "bot": {
+        "appId": "349f9ea5-a6ee-4993-b256-8bbc38d3c68c",
+        "appPassword": "lffzo3C1{9ayGiAMJzQH.[o4zndcnJX}"
+    },
+    "linkedIn": {
+        "clientId": "<client_id>",
+        "clientSecret": "<client_secret>"
+    },
+    "azureAD": {
+        "appId": "349f9ea5-a6ee-4993-b256-8bbc38d3c68c",
+        "appPassword": "lffzo3C1{9ayGiAMJzQH.[o4zndcnJX}"
+    },
+    "google": {
+        "clientId": "<client_id>",
+        "clientSecret": "<client_secret>"
+    },
+    "storage": "memory",
+    "features": {
+    }
+}

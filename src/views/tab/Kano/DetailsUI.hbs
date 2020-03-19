@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <script type="text/javascript" >
+        function fnchoose(){
+           
+        $('#setclass').text($('#ddlclass').val());
+        
+        alert($('#ddlclass').val());
+        $('#v-pills-home-tab').click();     
+        
+        $('#v-pills-home-tab').tab('show');
+        $('#exampleModal').modal('hide');
+          }
+        $('#myTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+          })
+
+         
+          
+    </script>
+    <style type="text/css">
+    .checkbox-success input[type="checkbox"]:checked + label::before {
+  background-color: #5cb85c;
+  border-color: #5cb85c; }
+.checkbox-success input[type="checkbox"]:checked + label::after {
+  color: #5cb85c; }
+
+  .btn-circle.btn-md { 
+            width: 40px; 
+            height: 30x; 
+            padding: 7px 10px; 
+            border-radius: 25px; 
+            font-size: 10px; 
+            text-align: center; 
+            background-color: #ff6900;
+            color:whitesmoke ;        } 
+    </style>
+  </head>
+  <body>
+
+    <div class="container" style="background-color: wheat;">
+        <!-- Content here -->
+        
+        <div class="row">
+            <div class="col-3"> <h3>Teams</h3> <span class="glyphicon glyphicon-filter" ></span> </div> 
+            <div class="col-9"></div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="myTab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+              </div>
+            </div>
+            
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+   <div class="row"><div class="col-11"><P id="setclass"> </P></div>  <div class="col-1">
+     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#LoginModal" style="background-color: #464775;color:whitesmoke ;">
+    Share
+   </button> 
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DetailsModal" style="background-color: #464775;color:whitesmoke ;">
+     Details
+   </button> 
+
+ 
+  
+  
+  </div>  </div> 
+  </nav>
+                </div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#exampleModal" style="background-color: #464775;color:whitesmoke ;">
+                   General
+                  </button>
+          
+                </div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">3</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">4</div>
+              </div>
+            </div>
+          </div>
+      </div>
+   
+<!-- Button trigger modal -->
+<!-- Modal  1-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Kano Code</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-1">               
+                  <img draggable="false"  src="../img/Keno.png"  width="30" height="30" > 
+                         </div>
+            <div class="col-9"> User creations by the Kano World account associated to the Teams accounts within the class  group are visible to all members of that team.  </div>
+            <div class="col-1"></div>
+          </div>
+            <br/> 
+            <div class="row">
+              <div class="col-2"></div>              
+              <div class="col-10"> 
+                  Choose a classroom
+               </div>
+              
+              
+        </div>
+            <div class="row">
+            <div class="col-2"></div>              
+            <div class="col-10"> 
+              <select class="form-control" id="ddlclass">
+                  <option>Demo class Team1</option>
+                  <option>Demo class Team2</option>
+                  <option>Demo class Team3</option>
+                </select>
+             </div>
+            
+            
+      </div>
+      <br/>
+      <div class="row">
+          <div class="col-2"></div>
+          <div class="col-10">
+              <button type="button" class="btn btn-warning abhishek" style="color:white" id="btnchoose" onclick="fnchoose();">Choose</button>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:white; color:  #464775;;">Back</button>
+        <button type="button" class="btn btn-primary" style="background-color: #464775; color: white;">Save </button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <!---model 2-->
+  <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Kano Code</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+<div class="col-6">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Title</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Descritption</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+      <div class="checkbox checkbox-success checkbox-inline">
+        <input type="checkbox" id="inlineCheckbox2" value="option1" checked="">
+        <label for="inlineCheckbox2"> Share to Micosoft Teams </label>
+      </div>
+   
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>Demo class Team1</option>
+        <option>Demo class Team2</option>
+        <option>Demo class Team3</option>
+      </select>
+    </div>
+</div>
+<div class="col-6" style="background-color:#41414d; "> <div class="rounded-circle" style="width:100px;height:100px;background-color: yellow;margin-top: 110px;margin-left: 50px;;">
+</div></div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color:white; color:  #464775;;">Back</button>
+          <button type="button" class="btn btn-primary" style="background-color: #464775; color: white;">Save </button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+  <!---model 3-->
+    <div class="modal fade" id="DetailsModal" tabindex="-1" role="dialog" aria-labelledby="DetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="DetailsModalLabel">Share</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">            
+            <div  class="col-7">
+              <br><br>
+              <p><strong>Share with others kano users?</strong></p>
+              <p> Submit your parent email address</p>
+              <button type="button" class="btn-circle btn-md">ok</button> 
+              <a href="#" target="blank" style="color:#ff6900">Maybe later</a>
+            </div> 
+            <div  class="col-5">
+              <div class="card-group">
+                <div class="card">
+                  <div style="background-color: darkolivegreen;">
+                  <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Avatars/avatar-5.jpg" alt="Card image cap"  >
+                </div>                
+                  <div class="card-body">
+
+                    <h5 class="card-title">Creation title</h5>
+                    <p class="card-text">Text updated </p>
+                   
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+   
+  </body>
+</html>
